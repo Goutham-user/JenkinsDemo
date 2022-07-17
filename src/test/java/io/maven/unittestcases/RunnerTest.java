@@ -33,7 +33,7 @@ public class RunnerTest {
 		final int number1 = 4;
 		final int number2 = 4;
 		
-		final int expected = 2;
+		final int expected = 8;
 		
 		final int actual = Runner.sum(number1, number2);
 		
