@@ -14,13 +14,39 @@ public class RunnerTest {
 	}
 
 	@Test
-	public void sumReturnsCorrectResult() {
+	public void sumReturnsCorrectResult1() {
 		System.out.println("Running sumReturnsCorrectResult...");
 		
 		final int number1 = 3;
 		final int number2 = 4;
 		
 		final int expected = 7;
+		
+		final int actual = Runner.sum(number1, number2);
+		
+		assertEquals(expected, actual);
+	}
+	@Test
+	public void sumReturnsCorrectResult2() {
+		System.out.println("Running sumReturnsCorrectResult...");
+		
+		final int number1 = 4;
+		final int number2 = 4;
+		
+		final int expected = 2;
+		
+		final int actual = Runner.sum(number1, number2);
+		
+		assertEquals(expected, actual);
+	}
+	@Test
+	public void sumReturnsCorrectResult3() {
+		System.out.println("Running sumReturnsCorrectResult...");
+		
+		final int number1 = 9;
+		final int number2 = 9;
+		
+		final int expected = 18;
 		
 		final int actual = Runner.sum(number1, number2);
 		
